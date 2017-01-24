@@ -55,6 +55,6 @@ app.get('/bad', (req, res) => {
 		errorMessage: 'Something bad happened!'
 	});
 });
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log(`Server is up on port ${port}`);
 }); // port 3000 for developing locally
