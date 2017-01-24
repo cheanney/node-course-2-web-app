@@ -48,7 +48,14 @@ app.get('/about', (req, res) => {
 		//currentYear: new Date().getFullYear()
 	});
 });
-
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		websitTitle: 'Node-Web-Server',
+		pageTitle: 'Project Page',
+		welcomeMessage: 'This is the project page',
+		//currentYear: new Date().getFullYear()
+	});
+});
 
 app.get('/bad', (req, res) => {
 	res.send({
